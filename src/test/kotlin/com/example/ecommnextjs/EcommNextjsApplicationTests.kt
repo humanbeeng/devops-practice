@@ -1,5 +1,6 @@
 package com.example.ecommnextjs
 
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
@@ -8,6 +9,7 @@ class EcommNextjsApplicationTests {
 
     @Test
     fun contextLoads() {
+        Assertions.fail<String>("Oops test failed")
     }
 
 }
