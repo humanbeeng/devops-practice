@@ -9,7 +9,6 @@ class EcommNextjsApplicationTests {
 
     @Test
     fun contextLoads() {
-        Assertions.fail<String>("Oops test failed")
     }
 
 }
