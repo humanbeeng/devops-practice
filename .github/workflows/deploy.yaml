@@ -48,7 +48,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
       - name: Gradle Clean Build and Push to Dockerhub
         run: ./gradlew clean build jib -Djib.to.image=humanbeeng/ecomm:${{steps.build-number.outputs.BUILD_NUMBER}}
