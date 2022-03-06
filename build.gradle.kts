@@ -10,14 +10,20 @@ plugins {
 
 }
 
-jib {
-    from {
-        image = "openjdk:11"
-    }
-    container{
-        ports = mutableListOf("8080")
-    }
-}
+
+
+
+//jib {
+//    from {
+//        image = "openjdk:11"
+//    }
+//    container {
+//        ports = mutableListOf("8080")
+//    }
+//    to {
+//        image = "humanbeeng/ecomm"
+//    }
+//}
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
